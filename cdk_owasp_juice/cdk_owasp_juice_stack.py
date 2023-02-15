@@ -40,7 +40,7 @@ class CdkOwaspJuiceStack(Stack):
             "ecs_service",
             cluster=cluster,
             task_image_options=ecsp.ApplicationLoadBalancedTaskImageOptions(
-                image=ecs.ContainerImage.from_registry("amazon/amazon-ecs-sample")),
+                image=ecs.ContainerImage.from_registry("bkimminich/juice-shop")),
             public_load_balancer=True
         )
 
